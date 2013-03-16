@@ -10,9 +10,6 @@ object Application extends Controller {
 
     System.out.println("branch a!!!!!");
 
-    
-    
-    
     Ok(views.html.index("Your new application is ready."))
   }
 }
