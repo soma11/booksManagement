@@ -4,6 +4,7 @@ import play.api._
 import play.api.mvc._
 import com.sun.xml.internal.ws.resources.WsdlmodelMessages
 import models.Book
+import views.html.play20.book
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,10 +15,10 @@ import models.Book
  */
 object MockApplication extends Controller{
   def index = Action {
-    Ok(views.html.mock("taitoru", this.mockModels(10)))
+    Ok(views.html.mock("一覧", this.mockModels(10)))
   }
   private def mockModels(count: Int):List[Book] = {
-    List.range(1, count).map(x => new Book(x, "url" + x , "label" + x, "description" + x , x))
+    Book.all()
   }
 }
 
