@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    color: #333;
+    font-family: 'MS PGothic',Arial,Verdana,Helvetica;
+    font-size: 85%;
+    line-height: 1.2em;
+    background: #ccc;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix { min-height: 1px; }
+
+* html .clearfix {
+    height: 1px;
+    /*¥*//*/
+    height: auto;
+    overflow: hidden;
+    /**/
+}
+
+a img {
+    border: none;
+}
+a:link,
+a:visited {
+    color: #197daa;
+    text-decoration: none;
+}
+a:visited {
+    color: #669999;
+}
+a:hover {
+    color: #e3b600;
+    text-decoration: underline;;
+}
+ul li {
+    list-style-type: none;
+}
+ol {
+    margin: 0 0 0 23px;
+}
+
+
+h1 {
+    padding: 20px 5px;
+    text-align: center;
+    font-size: 180%;
+    font-weight: bold;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+    margin: 0px;
+    border-bottom: solid #666 5px;
+}
+h2{    font-size: 150%;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    padding: 5px;
+    background: #999;
+    color: #fff;
+}
+#content {
+    background-color: #FFFFFF;
+}
+.float-left {
+    float: left;
+}
+
+.book-area{
+    background: #eeeeee;
+    border-bottom: solid 1px #666666;
+    border-top:solid 1px #ffffff;
+    padding: 20px 10px;
+
+}
+.book-info-left {
+    width:40%;
+    margin-right: 5%;
+    background: #ffffff;
+    text-align: center;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+
+.book-info-right {
+    width:55%;
+    text-align: center;
+}
+
+.apply-button{
+    width:100%;
+}
