@@ -61,10 +61,49 @@
 		
 		<!-- BookList -->
 		<ul class="thumbnails">
+		<!-- NewBook -->
+            <li class="span4">
+                <div class="thumbnail">
+                    <img src="@routes.Assets.at("images/P_PHP.jpg") alt="ALT NAME">
+                    <div class="caption">
+
+                        <!-- Form -->
+                        <form class="form-horizontal">
+                            <div class="control-group">
+                                <label class="control-label">画像:</label>
+                                <div class="controls">
+                                    <input type="file">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">タイトル:</label>
+                                <div class="controls">
+                                    <input type="text" placeholder="Type something…">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">参考サイト:</label>
+                                <div class="controls">
+                                    <input type="text" placeholder="Type something…">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">在庫数:</label>
+                                <div class="controls">
+                                    <input type="number">
+                                </div>
+                            </div>
+                            <p align="center"><button type="sbumit" class="btn btn-primary btn-block">更新</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </li>		
+		
 			@books.map { book =>
 			<li class="span4">
 				<div class="thumbnail">
-					<img src="@routes.Assets.at("images/" + book.imageUrl)" alt="ALT NAME">
+					<img src="@routes.Assets.at("images/" + book.photoFileName)" alt="ALT NAME">
 					<div class="caption">
 
 						<!-- Form -->
