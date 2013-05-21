@@ -1,0 +1,51 @@
+@(bookForm: Form[BookForm])
+
+@import helper._
+@import helper.twitterBootstrap._
+
+@main("新規作成") {
+
+    @helper.form(action = routes.Book.create()) {
+
+        <fieldset>
+            <legend>書籍情報の登録</legend>
+
+            @inputText(
+                bookForm("title"),
+                '_label -> "本の名前",
+                '_help -> "Enter a valid book title."
+            )
+
+            @inputText(
+                bookForm("acquisition_Date"),
+                '_label -> "購入日"
+            )
+
+            @inputText(
+                bookForm("release_Date"),
+                '_label -> "発売日"
+            )
+
+            @inputText(
+                bookForm("stok"),
+                '_label -> "在庫数"
+            )
+
+            @inputText(
+                bookForm("url"),
+                '_label -> "参考URL"
+            )
+
+            @inputText(
+                bookForm("photoFileName"),
+                '_label -> "本の画像名"
+            )
+
+        </fieldset>
+
+        <div class="actions">
+            <input type="submit" class="btn primary" value="送信">
+        </div>
+
+    }
+}
